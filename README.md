@@ -2,7 +2,7 @@
 
 Docker 容器使用 busybox 启动 telnet 服务器，将程序挂载到端口 `2333` 上，可用于 ctf misc 题
 
-# Usage
+## Usage
 
 `docker-compose up`
 
@@ -18,6 +18,6 @@ proot 的启动命令如下，`-b /lib` 表示将容器的此目录 `/lib` 映�
 
 `proot -r /home/ctf -0 -w / -b /dev -b /proc -b /sys -b /lib -b /lib64 /helloworld`
 
-# Connect
+## Connect
 
 `telnet ipaddr 2333`
