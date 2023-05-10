@@ -10,7 +10,7 @@ Docker 容器使用 busybox 启动 telnet 服务器，将程序挂载到端口 `
 
 3. `docker-compose up`
 
-修改配置后使用 `docker-compose up --build` 重新 build 镜像
+修改配置后使用 `docker-compose build` 重新 build 镜像
 
 ## Connect
 
