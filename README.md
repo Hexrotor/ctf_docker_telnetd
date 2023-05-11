@@ -28,4 +28,4 @@ telnet 服务器会执行 `run.sh` ，该脚本以普通用户 `ctf` 的权限�
 
 proot 的启动命令如下
 
-`proot -r /home/ctf -0 -w / -b /dev -b /proc -b /sys -b /lib -b /lib64 /helloworld`
+`proot -r /home/ctf -w / -b /dev -b /proc -b /sys -b /libx32 -b /lib32 -b /lib -b /lib64 /helloworld`
