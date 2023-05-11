@@ -12,6 +12,8 @@ RUN sed -i "s/http:\/\/archive.ubuntu.com/http:\/\/mirrors.tuna.tsinghua.edu.cn/
     useradd -m ctf && \
     chmod 700 /start.sh /run.sh /busybox && \
     echo "flag{default_flag}" > /home/ctf/flag && \
+    mkdir /home/ctf/bin && \
+    cp /usr/bin/sh /usr/bin/ls /usr/bin/cat /home/ctf/bin/ && \
     chown -R root:ctf /home/ctf && \
     chmod -R 750 /home/ctf && \
     chmod 740 /home/ctf/flag
